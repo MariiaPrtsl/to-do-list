@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background: rosybrown;
+}
+.wrapper {
+  max-width: 400px;
+  margin: 135px auto;
+  background: gray;
+  border-radius: 7px;
+  padding: 28px 0;
+}
+
+.task-input {
+  height: 52px;
+  padding: 0 25px;
+  position: relative;
+}
+.task-input input {
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 0 20px 0 53px;
+}
+
+.task-input input::placeholder {
+  color: blueviolet;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 25px;
+  border-bottom: 1px solid #ccc;
+}
+
+.filter span {
+  cursor: pointer;
+  margin: 0 8px;
+  font-size: 17px;
+}
