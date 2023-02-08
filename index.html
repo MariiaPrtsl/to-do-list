@@ -6,23 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List App</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   </head>
   <body>
     <div class="wrapper">
-      <div class="tasl-input">
+      <div class="task-input">
+        <img src="menu-list-checklist-svgrepo-com.svg" alt="icon" >
         <input type="text" placeholder="Add a new task" />
       </div>
       <div class="controls">
         <div class="filters">
-          <span id="all">All</span>
+          <span id="all" class="active">All</span>
           <span id="pending">Pending</span>
-          <span id="completed">completed</span>
+          <span id="completed">Completed</span>
         </div>
         <button class="clear-btn">Clear All</button>
       </div>
       <ul class="task-box">
         <li class="task">
-          <label for="">
+          <label for="1">
+            <input type="checkbox" id="1" />
+            <p>Renew gym</p>
+          </label>
+          <div class="settings">
+            <i class="uil uil-ellipsis-h"></i>
+            <ul class="task-menu">
+                <li><i class="uil uil-pen"></i>Edit</li>
+                <li><i class="uil uil-trash"></i>Delete</li>
+
+            </ul>
+        </li>
+        <li class="task">
+          <label for="1">
             <input type="checkbox" id="1" />
             <p>Renew gym</p>
           </label>
@@ -31,16 +46,7 @@
           </div>
         </li>
         <li class="task">
-          <label for="">
-            <input type="checkbox" id="1" />
-            <p>Renew gym</p>
-          </label>
-          <div class="settings">
-            <i class="uil uil-ellipsis-h"></i>
-          </div>
-        </li>
-        <li class="task">
-          <label for="">
+          <label for="1">
             <input type="checkbox" id="1" />
             <p>mio flasto</p>
           </label>
@@ -49,7 +55,7 @@
           </div>
         </li>
         <li class="task">
-          <label for="">
+          <label for="1">
             <input type="checkbox" id="1" />
             <p>Router club</p>
           </label>
@@ -58,7 +64,7 @@
           </div>
         </li>
         <li class="task">
-          <label for="">
+          <label for="1">
             <input type="checkbox" id="1" />
             <p>bookmate</p>
           </label>
@@ -68,5 +74,6 @@
         </li>
       </ul>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
