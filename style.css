@@ -14,7 +14,7 @@ body {
 .wrapper {
   max-width: 405px;
   margin: 135px auto;
-  background: gray;
+  background: rgb(230, 217, 217);
   border-radius: 7px;
   padding: 28px 0;
 }
@@ -64,7 +64,7 @@ li {
   padding-left: 5px;
 }
 .filters span.active {
-  color: brown;
+  color: rgb(209, 113, 113);
 }
 
 .filters span:first-child {
@@ -79,7 +79,7 @@ li {
   font-size: 13px;
   cursor: pointer;
   padding: 7px 13px;
-  background: brown;
+  background: rgb(225, 62, 62);
 }
 
 .task-box {
@@ -122,12 +122,12 @@ text-decoration: line-through;
   border-radius: 4px;
   right: -5px;
   bottom: -65px;
-  transform-origin: top left;
+  transform-origin: top right;
   transition: transform 0.2s ease;
 }
-.settings:hover .task-menu {
+ .settings .task-menu.show{
   transform: scale(1);
-}
+} 
 .task-menu li {
   height: 25px;
   font-size: 16px;
