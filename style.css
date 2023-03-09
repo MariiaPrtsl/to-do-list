@@ -11,6 +11,13 @@ body {
   overflow: hidden;
   background: rosybrown;
 }
+
+.todo-headline {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+  color: rgb(253, 250, 250);
+}
 .wrapper {
   max-width: 405px;
   margin: 135px auto;
